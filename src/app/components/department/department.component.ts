@@ -86,7 +86,7 @@ export class DepartmentComponent implements OnInit {
   }
 
   delete(departmentId:number){
-    this.facultyService.deleteFaculty(departmentId).subscribe(()=>{
+    this.departmenService.deleteDepartment(departmentId).subscribe(()=>{
       this.getDepartments();
     })
   }

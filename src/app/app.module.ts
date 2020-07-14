@@ -17,6 +17,10 @@ import { FacultyComponent } from './components/faculty/faculty.component';
 import { DepartmentComponent } from './components/department/department.component';
 import { StudentsComponent } from './components/students/students.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TournamentsCrudComponent } from './components/tournaments-crud/tournaments-crud.component';
+import { SportCrudComponent } from './components/sport-crud/sport-crud.component';
+import { CountryCrudComponent } from './components/country-crud/country-crud.component';
+import { SportCountryComponent } from './components/sport-country/sport-country.component';
 @NgModule({
   imports:      [ 
     BrowserModule,
@@ -32,7 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     }),
     AgmDirectionModule //agm-direction
      ],
-  declarations: [ AppComponent, AddBookingComponent, CounterComponent, FetchDataComponent, HomeComponent, MapComponent, NavMenueComponent, CourseComponent, FacultyComponent, DepartmentComponent, StudentsComponent ],
+  declarations: [ AppComponent, AddBookingComponent, CounterComponent, FetchDataComponent, HomeComponent, MapComponent, NavMenueComponent, CourseComponent, FacultyComponent, DepartmentComponent, StudentsComponent, TournamentsCrudComponent, SportCrudComponent, CountryCrudComponent, SportCountryComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

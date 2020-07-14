@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  rootUrl:'http://localhost:21649/api/'
+  rootUrl:'http://localhost:21649/api/',
+  sportsApiUrl:'https://localhost:44365/api/'
 };
 
 /*
