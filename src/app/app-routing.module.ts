@@ -9,6 +9,7 @@ import { MapComponent } from './components/map/map.component';
 import { TournamentsCrudComponent } from './components/tournaments-crud/tournaments-crud.component';
 import { SportCrudComponent } from './components/sport-crud/sport-crud.component';
 import { CountryCrudComponent } from './components/country-crud/country-crud.component';
+import { SportCountryComponent } from './components/sport-country/sport-country.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,9 @@ const routes: Routes = [
   {path:'getlocation',component:MapComponent},
   {path:'sport/tournaments', component:TournamentsCrudComponent},
   {path:'sport/sports', component:SportCrudComponent},
-  {path:'sport/countries', component:CountryCrudComponent}
+  {path:'sport/countries', component:CountryCrudComponent},
+  {path:'sport/linkSport', component:SportCountryComponent}
+
 ];
 
 @NgModule({

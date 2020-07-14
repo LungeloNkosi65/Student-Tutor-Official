@@ -21,6 +21,8 @@ import { TournamentsCrudComponent } from './components/tournaments-crud/tourname
 import { SportCrudComponent } from './components/sport-crud/sport-crud.component';
 import { CountryCrudComponent } from './components/country-crud/country-crud.component';
 import { SportCountryComponent } from './components/sport-country/sport-country.component';
+import { SportTournamentComponent } from './components/sport-tournament/sport-tournament.component';
+import { TournamentEventComponent } from './components/tournament-event/tournament-event.component';
 @NgModule({
   imports:      [ 
     BrowserModule,
@@ -36,7 +38,7 @@ import { SportCountryComponent } from './components/sport-country/sport-country.
     }),
     AgmDirectionModule //agm-direction
      ],
-  declarations: [ AppComponent, AddBookingComponent, CounterComponent, FetchDataComponent, HomeComponent, MapComponent, NavMenueComponent, CourseComponent, FacultyComponent, DepartmentComponent, StudentsComponent, TournamentsCrudComponent, SportCrudComponent, CountryCrudComponent, SportCountryComponent ],
+  declarations: [ AppComponent, AddBookingComponent, CounterComponent, FetchDataComponent, HomeComponent, MapComponent, NavMenueComponent, CourseComponent, FacultyComponent, DepartmentComponent, StudentsComponent, TournamentsCrudComponent, SportCrudComponent, CountryCrudComponent, SportCountryComponent, SportTournamentComponent, TournamentEventComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

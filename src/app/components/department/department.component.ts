@@ -19,6 +19,7 @@ export class DepartmentComponent implements OnInit {
   departmentForm: any;
   virtualFaculty:Faculty;
 
+
   constructor(private departmenService: DepartmentService, private formBuilder: FormBuilder, private facultyService: FacultyService) {
    
   }
@@ -88,8 +89,9 @@ export class DepartmentComponent implements OnInit {
   delete(departmentId:number){
     this.departmenService.deleteDepartment(departmentId).subscribe(()=>{
       this.getDepartments();
-    })
+    });
   }
+
 
  
 
