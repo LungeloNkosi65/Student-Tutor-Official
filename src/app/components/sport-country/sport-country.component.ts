@@ -45,7 +45,7 @@ export class SportCountryComponent implements OnInit {
 
   addSportToCountry(sportCountry: SportCountry) {
     if (sportCountry != undefined && sportCountry != null) {
-      this.sportCountryService.addSportToCountry(sportCountry).subscribe((data: any) => {
+      this.sportCountryService.addSportToCountry(sportCountry).subscribe(() => {
         this.getSportCountry();
         this.sportId = null;
         this.countryId = null;
